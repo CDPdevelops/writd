@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical5_T1</title>
+</head>
+<body>
+<h1>For Loops</h1>
+
+<p>Start the counting:</p>
+
+<p id="for"></p>
+
+<script>
+function DisplayTex(inputtext) {
+  var text = "";
+  var i;
+  for (i = 1; i < 6; i++) {
+    text += "Counter i = " + i + "<br>";
+  }
+  document.getElementById("for").innerHTML = text + "<br> The counting is complete!";
+}
+DisplayTex();
+
+</script>
+</body>
+</html>
+
+
+

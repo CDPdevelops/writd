@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical5_T2b</title>
+<script src="../../practicals/practical_4/js/myjslib.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+	.inline {display: inline;}
+</style>
+</head>
+<body>
+
+<h1>Task 2 - Loops with Arrays </h1>
+
+<h2>Courses Offered</h2> 
+<p id="courses"></p>
+
+<form id="form">
+<h2> Input your name below:</h2> 
+<input type="text" id="fname" name="fname" value=" "><br>
+
+<h2>Select the university you attend below:</h2>
+<input type="radio" name="uni" id="u1" value="Queen's University Belfast" onclick="DisableUniValue();"> 
+<p class="inline" id="Queens"></p>
+
+<input type="radio" name="uni" id="u2" value="University of Ulster" onclick="EnableUniValue();">
+<p class="inline" id="Ulster"></p>
+
+<h2>Select the campus you attend below:</h2>
+
+<input type="checkbox" name="campus" id="c1" value="Jordanstown" class="check"> 
+<p class="inline" id="campus1"></p>
+
+<input type="checkbox" name="campus" id="c2" value="Belfast" class="check"> 
+<p class="inline" id="campus2"></p>
+
+<input type="checkbox" name="campus" id="c3" value="Magee" class="check"> 
+<p class="inline" id="campus3"></p>
+
+<input type="checkbox" name="campus" id="c4" value="Coleraine" class="check"> 
+<p class="inline" id="campus4"></p>
+
+<br><br>
+<button type="button" onclick="DisplayTex(inputtext)">Show Information</button>
+
+<br><br>
+<input type="reset">
+</form>
+
+<br>
+
+<p id="displayDetails"></p>
+
+<!-- COURSES-->
+<script>
+var text = "";
+var i;
+for (i = 0; i < course.length; i++) {
+  text += course[i] + "<br>";
+} 
+document.getElementById("courses").innerHTML = text;
+</script>
+
+
+<!-- UNIVERSITY'S-->
+<script>
+var u1 = uni[0];
+var u2 = uni[1];
+var i;
+for (i = 0; i < uni.length; i++) {
+  text += uni[i] + "<br>";
+}
+document.getElementById("Queens").innerHTML = u1;
+document.getElementById("Ulster").innerHTML = u2;
+</script>
+
+
+<!-- CAMPUSES-->
+<script>
+var text = "";
+var c1 = campus[0];
+var c2 = campus[1];
+var c3 = campus[2];
+var c4 = campus[3];
+var i;
+for (i = 0; i < campus.length; i++) {
+  text += campus[i] + "<br>";
+}
+document.getElementById("campus1").innerHTML = c1;
+document.getElementById("campus2").innerHTML = c2;
+document.getElementById("campus3").innerHTML = c3;
+document.getElementById("campus4").innerHTML = c4;
+</script>
+
+
+<script> //Function to return all details entered / selected.
+        function DisplayTex() { 
+            var x = document.getElementById("form");
+            var details = "<h2>Details Returned:</h2>";
+            var fname = document.getElementById("fname").value;
+            var campus = document.getElementsByName('campus'); 
+            var uni = document.getElementsByName('uni'); 
+            var i;
+              
+            for(i = 0; i < uni.length; i++) { 
+                if(uni[i].checked) 
+                uniValue = uni[i].value; 
+            }
+
+            for(i = 0; i < campus.length; i++) { 
+                if(campus[i].checked) 
+                campusValue = campus[i].value; 
+            }
+ document.getElementById("displayDetails").innerHTML = details + fname + "<br><br>" + uniValue + "<br><br>" + campusValue + "<br><br>" + "Hello, " + fname + "! You are a student in " + uniValue + " at the " + campusValue + " campus.";
+        } 
+</script> 
+
+
+<!-- Used to disable and enable values depending on which university was selected-->
+<script>
+    function DisableUniValue(){
+        document.getElementById("c1").disabled = true; 
+        document.getElementById("c3").disabled = true;
+        document.getElementById("c4").disabled = true;
+        }
+
+    function EnableUniValue(){
+        document.getElementById("c1").disabled = false;
+        document.getElementById("c3").disabled = false;
+        document.getElementById("c4").disabled = false;
+        }
+</script> 
+
+<!--Function used to allow only on checkbox to be selected at single time.-->
+<script>
+$(document).ready(function(){
+    $('.check').click(function() {
+        $('.check').not(this).prop('checked', false);
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+

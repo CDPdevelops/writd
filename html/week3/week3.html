@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Week 3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="COM353 Weekly Learning Log">
+<meta name="author" content="Christopher Paul">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier%20New">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,#RT{font-family: 'Nunito', sans-serif;}
+.bar,h1,h2,button {font-family: "Courier New"}
+</style>
+</head>
+<body>
+
+<header>
+<!-- Navbar on larger screens-->
+<div class="top">
+  <div class="bar black card -right large">
+    <a class="bar-item button hide-medium hide-large right padding-large hover-white large -red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="button padding-large">Christopher Paul</a>
+    <a href="#contact" class="bar-item button hide-small padding-large hover-white right">contact</a>
+    <a href="../../index.html#usefulres" class="bar-item button hide-small padding-large hover-white right">useful resources</a>
+    <a href="../../index.html#weeklyLog" class="bar-item button hide-small padding-large hover-white right">weekly logs</a>
+    <a href="../../index.html#about" class="bar-item button hide-small padding-large hover-white right">about</a>
+    <a href="../../index.html" class="bar-item button hide-small padding-large right">home</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+    <div id="navDemo" class="bar-block white hide hide-large hide-medium large">
+      <a href="../../index.html" class="bar-item button padding-large">home</a>
+      <a href="../../index.html#about" class="bar-item button padding-large">about</a>
+      <a href="../../index.html#weeklyLog" class="bar-item button padding-large">weekly logs</a>
+      <a href="../../index.html#usefulres" class="bar-item button padding-large">useful resources</a>
+      <a href="../../index.html#contact" class="bar-item button padding-large">contact</a>
+    </div>
+</div>
+</header>
+
+<!-- Header -->
+<header class="container black center blogheader">
+  <h1 class="margin jumbo text-aqua2">&lt;Practical <span class="text-purple">2</span>/&gt;</h1>
+  <h2 class="margin text-aqua2">&lt;Making a Website Accessible and Introduction to JavaScript/&gt;</h2>
+  <p class="xlarge">Welcome to learning_log week 3!</p>
+  <a target="_blank" href ="../../practicals/practical_2/practical2_T1.html" class="button black padding-large large margin-top round-large border">Solution TASK 0</a>
+  <a target="_blank" href ="../../practicals/practical_2/index.html" class="button black padding-large large margin-top round-large border">Solution TASK 1</a>
+
+    <!-- Typewriter animation-->
+<div class="hide-small hide-medium">
+<pre id="typewriter">
+
+
+
+
+<span class="var-highlight">scroll for more!</span></pre></div>
+  <!-- End of header-->
+</header>
+
+
+<!-- First Grid -->
+  <h5 class="padding-small">Learning_log_3, July 01, 2020</h5>
+<div id="about" class="row-padding padding-32 container">
+  <div class="content justify">
+    <div class="col center">
+      <h1 class="text-orange">&lt;Objectives/&gt;</h1>
+        <h5>Making an Accessible Website</h5>
+        <h5>Introductory JavaScript</h5>
+        <h5>Introductory JavaScript II</h5>
+    </div>
+
+    <div>
+      &nbsp;
+      <h1 class="text-orange center">&lt;Summary/&gt;</h1>
+      <h5 class="text-orange ">Making an Accessible Website</h5>
+      <h5>When creating a webpage, the designer must take into account who will use this page, the audience may apply to young, old, and people with disabilites, therefore accessibility features must be incorporated to assist anyone in using the page. For example: someone with color blindness may find the initial design diffucult to follow. With the incorporation of an accessibility feature that could alter the appearance of the design, to allow them to see the page better. The first task was to return back to the practical_0 page and modify to meet accessibility requirements.</h5>  
+
+      <h5 class="text-orange">Tables</h5> 
+      <h5>Within the table element a summary and scope attributes were added. The <span class="text-orange">summary</span> element adds a textual description of the table and the <span class="text-orange">scope</span> attribute acts as a table heading for rows and colums.</h5>
+
+      <h5 class="text-orange">Images</h5>
+      <h5>Image elements were given an <span class="text-orange">alt</span> attribute to give a description of the image if necessary. If the image is only for decoration the alt attribute is left blank. <span class="text-orange">alt = ""</span></h5>
+
+      <h5 class="text-orange">Text Entry</h5>
+      <h5>Text entry placeholders require an id to uniquely identify each placeholder. The label potrays to the user on screen what each placeholder is and with the <span class="text-orange">required</span> element, it shows the users what pattern must be followed, adding a sense of validation.</h5>
+
+      <h5 class="text-orange">Radio Button & Check Boxes</h5>
+      <h5>Radio buttons and check boxes follow the same protocol as text entry placeholders. Except when adding a label to a placeholder the tag must be placed before the input page. In contrast with radio buttons and check boxes the label tag must be placed after the input tag.</h5>
+
+      <h5 class="text-orange">Ensure CSS and XHTML standards</h5>
+      <h5>The final task was to verify the CSS and HTML being used within the learning_log. CSS and HTML needs to adhere to a standard to ensure that it can be understood by all web clients that may encounter it. With the assistance of the W3C group they offer a validator hosted online at the w3 CSS and HTML validators. Once uploaded the validator will generate a list of errors, warnings and valid CSS information.</h5>
+
+      <h5>Since all HTML and CSS has passed the following image can be included: </h5>
+
+      <p>
+      <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img alt="Valid CSS!" style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"/>
+      </a>Figure 1
+      </p><!--This code and image has been authorised to use by: http://jigsaw.w3.org/css-validator/images/vcss -->
+
+
+
+      <h5>After modifying practical_0, I applied the same rules to the learning log. Every page so far has passed under the HTML and CSS validators meeting the accessibility requirements. Each image has been either given a descriptive alt attribute or left blank if necessary.</h5>
+
+      &nbsp;
+      <h5 class="text-orange">Introductory JavaScript</h5>
+      <h5>This task was required to copy code from the practical PDF, create a HTML document and download two images of choice, renaming them<span class="text-orange"> 'IMAGE_0' & 'IMAGE_1'</span>. With the incorporation of javascript, this task showed how two images swap with the mouse cursor hovering over the selected area. Something like the following:</h5>
+
+      <div class="image center">Figure 2
+        <a href='#' onmouseover="document.photo.src='../../practicals/practical_2/media/IMAGE_0.png';" onmouseout="document.photo.src='../../practicals/practical_2/media/IMAGE_1.png';"> 
+
+        <img alt="Click Me!" src="../../practicals/practical_2/media/IMAGE_1.png" width="200" height="200"name="photo" border="0"> 
+        </a>
+      </div>
+
+      <h5>The next step was creating the DOM (<span class="text-orange">Document Object Model</span>) structure for this HTML document. This Document Object Model is an internal projection of objects held on a web page.  </h5>
+
+      <div class="image center">Figure 3 & 4
+      <img alt="DOM Structure" src="../../media/DOM.png" style="width:40%">
+      <img alt="DOM Structure" src="../../media/DOM2.png" style="width:50%">
+      <!-- image of character used in animation on index.html -->
+      </div>
+
+
+
+
+
+      <h5 class="text-orange">Introductory JavaScript II</h5>
+      <h5>Within task 1 along side the image element, the next task was to add three rollover links, allowing users to change the background color of those shown. A rollover link is by which the user's mouse pointer is moved onto an element, allowing an event to occur. In this case the event is altering background's appearance using the <span class="text-orange">onMouseOver</span> attribute held within the &lt;a/&gt; tag. The three colors to be used within these rollover links are yellow, red and green. Due to rollover link 1 needing to use a <span class="text-orange">valid named</span> color and rollover link 2 a <span class="text-orange">RGB specified</span> colour, the final color would be in <span class="text-orange">Hex</span> using the hastag key. I added an extra rollover link allowing the user to return to the original background color.</h5>
+
+        Figure 5
+        <table class="table-all"> <!--Placeholders and their maxLength/patterns-->
+        <tr>
+        <th scope="col">Color</th>
+        <th scope="col">Appearance</th>
+        <th scope="col">Valid Name</th>
+        <th scope="col">RGB</th>
+        <th scope="col">Hex</th>
+      </tr>
+        <tr>
+        <td>Yellow</td>
+        <td class="yellow"></td>
+        <td>"yellow"</td>
+        <td>(255,255,0)</td>
+        <td>#FFFF00</td>
+      </tr>
+        <tr>
+        <td>Red</td>
+        <td class="red"></td>
+        <td>"red"</td>
+        <td>(255, 1, 0)</td>
+        <td>#FF0000</td>
+      </tr>
+        <tr>
+        <td>Green</td>
+        <td class="green"></td>
+        <td>"green"</td>
+        <td>(0,128,0)</td>
+        <td>#008000</td>
+      </tr>
+        <tr>
+        <td>White</td>
+        <td class="white"></td>
+        <td>"white"</td>
+        <td>(255,255,255)</td>
+        <td>#FFFFFF</td>
+      </tr>
+      </table>
+
+    </div>
+  </div>
+  <!-- End of first grid-->
+</div>
+
+
+  <!-- Second Grid -->
+  <div id="weeklyLog" class="row-padding black padding-64 container">
+    <div class="content">
+      <div class="col center">
+        <h1 class="text-aqua2">&lt;Weekly Logs/&gt;</h1>
+        <h5 class="padding">Click here for Week 4's log or click to find more!</h5>
+      </div>
+    </div>
+  <div class="col l3 m6 s12 padding-small"></div>
+
+
+    <!-- Linked image week2-->
+  <div class=" col l3 m6 s12 padding-small ">
+  <div class=" white hover-opacity">
+    <a href="../../html/week4/week4.html">
+    <img alt="Week 4 Learning Log" class="image" id="week4" src="../../media/week4.png">
+    </a>
+  </div>
+  </div>
+
+      <!-- Linked image week2-->
+  <div class=" col l3 m6 s12 padding-small ">
+  <div class=" white hover-opacity">
+    <a href="../../index.html#weeklyLog">
+    <img alt="Other logs" class="image" id="otherlogs" src="../../media/otherlogs.png">
+    </a>
+  </div>
+  </div>
+  <!-- End of second grid-->
+</div>
+
+
+<!-- Third Grid -->
+<div id="usefulres" class="row-padding white padding-64 container">
+  <div class="content">
+    <div class="col center text-orange">
+    <h1>&lt;Useful Resources/&gt;</h1>
+    <h5 class="padding text-black">Listed below are resources that became helpful during this practical:</h5>
+
+    W3C, 2020, CSS Validator, W3C, viewed July 01, 2020, <a target="_blank" href="https://jigsaw.w3.org/css-validator/">&lt;https://jigsaw.w3.org/css-validator/&gt;</a><br>
+
+    W3C, 2020, HTML Validator, W3C, viewed July 01, 2020, <a target="_blank" href="https://validator.w3.org/nu/#textarea">&lt;https://validator.w3.org/nu/#textarea&gt;</a><br>
+     
+    W3schools, 2020, Color Generator, W3schools, viewed July 01, 2020, <a target="_blank" href="https://www.w3schools.com/colors/colors_picker.asp">&lt;https://www.w3schools.com/colors/colors_picker.asp&gt;</a><br> 
+ 
+    <h5 class="padding text-black">University lecture notes:</h5>
+    <p>Lecture 6: Web Accessibility 
+     cp.shewell. (2020) 6_WebAccessibility.pdf. N.I: Blackboard.</p>
+
+    <h5 class="padding text-black">Images:</h5>
+    <p>Figure 1. Valid CSS Logo (w3.org 2020)</p> 
+    <p>Figure 2. Rollover Image (Christopher Paul 2020)</p>
+    <p>Figure 3,4. DOM Document Object Model (Christopher Paul 2020) </p>
+    <p>Figure 5. Summary Table (Christopher Paul 2020)</p>
+
+
+    </div>
+  </div>
+  <!-- End of third grid-->
+</div>
+
+<!-- Footer -->
+<footer id="contact" class="container padding-64 center black">  
+    <div class="col center">
+      <h1 class="text-aqua2">&lt;Contact Me/&gt;</h1>
+      <h5 class="padding">Contact me via: <a href="mailto:Paul-C5@ulster.ac.uk">Paul-C5@ulster.ac.uk</a></h5>
+    </div>
+</footer>
+
+<footer class="footer2">
+    <p class="text-white">All rights reserved. Christopher Paul &copy; 2020
+      <a href="#" class="-border-box -right -hover-text-green">
+        <i id="Arrow" class="fa fa-arrow-up right"><span id="RT"> return to top</span></i>
+      </a>
+
+      <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img class="center" alt="Valid CSS!" style="border:0;width:78px;height:28px" src="http://jigsaw.w3.org/css-validator/images/vcss"/>
+      </a>
+    </p> 
+</footer>
+<!-- End of Footer -->
+
+
+<!-- Javascript file stored in js folder within the learning_log-->
+<script src="../../js/js.js"></script>
+</body>
+</html>

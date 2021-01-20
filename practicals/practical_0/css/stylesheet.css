@@ -1,0 +1,31 @@
+
+#jQueryLogo{              /*adjusting size of logo*/
+  width:  135px;
+  height: 155px;
+}
+
+body{
+  padding: 20px;          /*adjusting padding of container as webpage is more visible*/
+}
+
+#name, #street, #emailAddress, #postcode, #contactnum, textarea{
+  display: inline-block;  /*adjusting the display of input fields*/
+  width: 18%;             /*adjusting width of input fields*/
+  padding: 12px;          /*adjusting space around input fields*/
+  border-radius: 4px;     /*adjusting border radius of input fields*/
+  margin-bottom: 16px;    /*adjusting spacing between input fields*/
+}
+
+#textbox{
+  width: 29%;             /*adjusting width of texbox*/
+}
+
+
+table, th, td {
+  border: 1px solid black;/*adjusting border properties of table*/
+}
+
+
+
+
+

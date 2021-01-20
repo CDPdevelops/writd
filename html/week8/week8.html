@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Week 8</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="COM353 Weekly Learning Log">
+<meta name="author" content="Christopher Paul">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier%20New">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6,#RT{font-family: 'Nunito', sans-serif;}
+.bar,h1,h2,button {font-family: "Courier New"}
+</style>
+</head>
+<body>
+
+<header>
+<!-- Navbar on larger screens-->
+<div class="top">
+  <div class="bar black card -right large">
+    <a class="bar-item button hide-medium hide-large right padding-large hover-white large -red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="button padding-large">Christopher Paul</a>
+    <a href="#contact" class="bar-item button hide-small padding-large hover-white right">contact</a>
+    <a href="../../index.html#usefulres" class="bar-item button hide-small padding-large hover-white right">useful resources</a>
+    <a href="../../index.html#weeklyLog" class="bar-item button hide-small padding-large hover-white right">weekly logs</a>
+    <a href="../../index.html#about" class="bar-item button hide-small padding-large hover-white right">about</a>
+    <a href="../../index.html" class="bar-item button hide-small padding-large right">home</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+    <div id="navDemo" class="bar-block white hide hide-large hide-medium large">
+      <a href="../../index.html" class="bar-item button padding-large">home</a>
+      <a href="../../index.html#about" class="bar-item button padding-large">about</a>
+      <a href="../../index.html#weeklyLog" class="bar-item button padding-large">weekly logs</a>
+      <a href="../../index.html#usefulres" class="bar-item button padding-large">useful resources</a>
+      <a href="../../index.html#contact" class="bar-item button padding-large">contact</a>
+    </div>
+</div>
+</header>
+
+<!-- Header -->
+<header class="container black center blogheader">
+  <h1 class="margin jumbo text-aqua2">&lt;Practical <span class="text-purple">7</span>/&gt;</h1>
+  <h2 class="margin text-aqua2">&lt;Nested Looping and Validation/&gt;</h2>
+  <p class="xlarge">Welcome to learning_log week 8!</p>
+
+    <a target="_blank" href ="../../practicals/practical_7/Practical7_T2.html" class="button black padding-large large margin-top round-large border">Solution TASK 2</a><br>
+
+    <!-- Typewriter animation-->
+<div class="hide-small hide-medium">
+<pre id="typewriter">
+
+
+
+
+
+
+<span class="var-highlight">scroll for more!</span></pre></div>
+  <!-- End of header-->
+</header>
+
+<!-- First Grid -->
+  <h5 class="padding-small">Learning_log_8, July 27, 2020</h5>
+<div id="about" class="row-padding padding-32 container">
+  <div class="content justify">
+    <div class="col center">
+      <h1 class="text-orange">&lt;Objectives/&gt;</h1>
+        <h5>Get Informed</h5>
+        <h5>Explain the following html example. What will be displayed in a web browser? </h5>
+        <h5>Create a web page for a car insurance candidate classification.  </h5>
+        <h5>Improve the script above to validate:</h5>
+    </div>
+    <div>
+
+        &nbsp;
+        <h1 class="text-orange center">&lt;Summary/&gt;</h1>
+        <h5 class="text-orange ">Get Informed</h5>
+        <h5>Before this practical was carried out, lectures notes were revisited along side these links to reinforce learning on JavaScipt Loops.</h5> 
+
+        <h5>http://wps.aw.com/aw_webwizard/234/60015.cw/index.html</h5>
+        <h5>http://www.javascriptworld.com</h5>
+        <h5>http://www.w3schools.com/JS/default.asp</h5> 
+
+        <h5 class="text-orange">Explain the following html example. What will be displayed in a web browser?</h5> 
+        <h5></h5>
+
+        <div class="image center">Figure 1
+        <img alt="Practical 7 Task 1" src="../../media/Practical7_T1.png" style="width:100%">
+        <!-- image of code used in practical 6 -->
+        </div>
+
+        <h5>As we can see from the html document opened in the browser. This page is used to create a multiplication table. The <code>for (j=1; j<=3; j++)</code> declares 3 rows of values, the <code>for (i=1; i<=5; i++)</code> is how many columns is in this table. The i*j multiplies the values shown on screen. This table shows the first 5 multiples of values 1, 2 and 3.</h5>
+
+        <h5 class="text-orange">Car insurance candidate classification. </h5>
+        <h5>The next step was to create a web page for car insurance candidates using if statements. When a visitor inputs first name, surname, age and marital status, the web site will provide information on his/her insurance class according to the rules below:</h5>
+        <h5>i. if the age is above 30 (include 30) and married, the car insurance is ‘class 1’;</h5>
+        <h5>ii. if the age is above 30 (include 30) and single, the car insurance is  ‘class 2’;</h5>
+        <h5>iii. if the age is below 30 and married, the car insurance is  ‘class 3’; </h5>
+        <h5>iv. if the age is below 30, single, the car insurance is  ‘class 4’.</h5>
+
+        <h5>As we can see the insurance class outputted to screen based on the rules of the form entered. Using the IF statements shown below (Figure 3). </h5>
+
+        <div class="image center">Figure 2
+        <img alt="Practical 7 Task 2" src="../../media/Practical7_T2.png" style="width:80%">
+        <!-- image of code used in practical 6 -->
+        </div>
+        <div class="image center">Figure 3
+        <img alt="Practical 7 Task 2" src="../../media/Practical7_T2i.png" style="width:80%">
+        <!-- image of code used in practical 6 -->
+        </div>
+
+        <h5>The form was given validation by:</h5>
+        <h5>Giving the numnber placeholder for age only a minimum value of 17, as that is the legal age to drive.</h5>
+        <h5>The input placeholders for surname and first name were given the patterns <code>pattern="[A-Za-z]{10,50}"</code> meaning they have a minimum of 10 characters and maximum of 50 to enter uppercase and lowercase characters.</h5>
+
+        <h5>The form elements have also been assigned a <span class="text-orange">required</span> attribute, meaning the values must be selected.</h5>
+
+
+        <h5 class="text-orange">The following practical tasks can be viewed by clicking the links above located within the header.</h5>
+
+    </div>
+  </div>
+  <!-- End of first grid-->
+</div>
+
+
+  <!-- Second Grid -->
+  <div id="weeklyLog" class="row-padding black padding-64 container">
+    <div class="content">
+      <div class="col center">
+        <h1 class="text-aqua2">&lt;Weekly Logs/&gt;</h1>
+        <h5 class="padding">Click here for Week 9's log or click to find more!</h5>
+      </div>
+    </div>
+  <div class="col l3 m6 s12 padding-small"></div>
+
+
+    <!-- Linked image week2-->
+  <div class=" col l3 m6 s12 padding-small ">
+  <div class=" white hover-opacity">
+    <a href="../../html/week9/week9.html">
+    <img alt="Week 9 Learning Log" class="image" id="week9" src="../../media/week9.png">
+    </a>
+  </div>
+  </div>
+
+      <!-- Linked image week2-->
+  <div class=" col l3 m6 s12 padding-small ">
+  <div class=" white hover-opacity">
+    <a href="../../index.html#weeklyLog">
+    <img alt="Other logs" class="image" id="otherlogs" src="../../media/otherlogs.png">
+    </a>
+  </div>
+  </div>
+  <!-- End of second grid-->
+</div>
+
+<!-- Third Grid -->
+<div id="usefulres" class="row-padding white padding-64 container">
+  <div class="content">
+    <div class="col center text-orange">
+    <h1>&lt;Useful Resources/&gt;</h1>
+    <h5 class="padding text-black">Listed below are resources that became helpful during this practical:</h5>
+
+    W3C, 2020, HTML Validator, W3C, viewed July 27, 2020, <a target="_blank" href="https://validator.w3.org/nu/#textarea">&lt;https://validator.w3.org/nu/#textarea&gt;</a><br>
+     
+    W3schools, 2020, JavaScript, W3schools, viewed July 27, 2020, <a target="_blank" href="https://www.w3schools.com/js/">&lt;https://www.w3schools.com/js/&gt;</a><br> 
+
+    Backup Brain, 2020, JavaScript, Backup Brain, viewed July 27, 2020, <a target="_blank" href="http://www.javascriptworld.com">&lt;http://www.javascriptworld.com&gt;</a><br> 
+
+    <h5 class="padding text-black">University lecture notes:</h5>
+    <p>Lecture 7: JavaScript One 
+     cp.shewell. (2020) JavaScriptOne.pptx. N.I: Blackboard.</p>
+
+    <p>Lecture 8: JavaScript Two 
+     cp.shewell. (2020) JavaScriptTwo.pptx. N.I: Blackboard.</p>
+
+    <h5 class="padding text-black">Images:</h5>
+    <p>Figure 1,2,3. Code Screenshot (Christopher Paul 2020)</p>
+
+    </div>
+  </div>
+  <!-- End of third grid-->
+</div>
+
+
+<!-- Footer -->
+<footer id="contact" class="container padding-64 center black">  
+    <div class="col center">
+      <h1 class="text-aqua2">&lt;Contact Me/&gt;</h1>
+      <h5 class="padding">Contact me via: <a href="mailto:Paul-C5@ulster.ac.uk">Paul-C5@ulster.ac.uk</a></h5>
+    </div>
+</footer>
+
+<footer class="footer2">
+    <p class="text-white">All rights reserved. Christopher Paul &copy; 2020
+      <a href="#" class="-border-box -right -hover-text-green">
+        <i id="Arrow" class="fa fa-arrow-up right"><span id="RT"> return to top</span></i>
+      </a>
+
+      <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img class="center" alt="Valid CSS!" style="border:0;width:78px;height:28px" src="http://jigsaw.w3.org/css-validator/images/vcss"/>
+      </a>
+    </p> 
+</footer>
+<!-- End of Footer -->
+
+<!-- Javascript file stored in js folder within the learning_log-->
+<script src="../../js/js.js"></script>
+</body>
+</html>

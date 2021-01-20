@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical6_T1b</title>
+<script src="../../practicals/practical_4/js/myjslib.js"></script>
+</head>
+<body>
+
+<h1>Task 1 - Conditional Branch Statements - checking a text input field </h1>
+
+<form id="form">
+<h2> Input your name below:</h2> 
+<input type="text" id="fname" name="fname" value=""><br>
+
+<br>
+<button type="button" onclick="displayTex()">Display Details</button>
+
+<br><br>
+<input type="reset">
+</form>
+
+<p id="displayDetails"></p>
+
+
+<script>
+    function displayTex() {
+    var x = document.getElementById("form");
+    var details = "<h2>Details Returned:</h2>";
+    var fname = document.getElementById("fname").value;
+
+    if (fname == "" || x == null) {
+    alert("Please enter your name!");
+    return false;
+  }
+  else details = details + fname + ", Welcome to my homepage!";
+  
+  document.getElementById("displayDetails").innerHTML = details;
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical6_3a</title>
+</head>
+	<body>
+	<h1>Task 3 - Conditional branch statements - checking grades</h1>
+        <p> Please enter four marks of choice</p>
+        <form>
+        <p> Mark 1<input type="number" id="mark1"></p>
+        <p> Mark 2<input type="number" id="mark2"></p>
+        <p> Mark 3<input type="number" id="mark3"></p>
+        <p> Mark 4<input type="number" id="mark4"></p>
+        <button id="averageButton"> Calculate</button>
+        <button type="reset">Reset Values</button>
+    	</form>
+   
+    	<script>
+        function average(a, b, c, d) {
+        return ((a*1 + b*1 + c*1 + d*1) /4);
+        }
+
+        document.getElementById("averageButton").onclick = function (){
+            var a = document.getElementById("mark1").value;
+            var b = document.getElementById("mark2").value;      
+            var c = document.getElementById("mark3").value;
+            var d = document.getElementById("mark4").value;       
+            // Passing the numbers to the function!
+        alert("Your average is: "+average(a,b,c,d));
+        }
+		</script>
+	</body>
+</html>
+
+

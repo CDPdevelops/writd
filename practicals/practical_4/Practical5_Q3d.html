@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical5_Q3d</title>
+<script src="../../practicals/practical_4/js/myjslib.js"></script>
+<script>
+
+function DisplayTex (inputtext) {
+  var fname = document.getElementById("fname").value;
+  var course = document.getElementById("course").value;
+  var uni = document.getElementById("uni").value;
+  var campus = document.getElementById("campus").value;
+  //values gathered from the input form
+
+  {
+  var x = document.getElementById("form");
+  var details = "<h1>Details Returned:</h1>";
+  var i;
+  for (i = 0; i < x.length; i++) {
+    details = details + x.elements[i].value + "<br><br>";
+  } //Returned details selected with a linebreak between each value.
+
+  document.getElementById("displayForm").innerHTML = details + ("Hello " + fname + ", Welcome to the JavaScript homepage! <br><br> You are a " + course + " student in " + uni + " at the " + campus + " campus.");
+	}//Details incorporated into a welcome message.
+}
+
+</script>
+</head>
+<body>
+
+<h1>Task 2 - Working with Functions</h1> <!--Page heading-->
+<form id="form">
+
+<details>
+	<summary>info</summary>
+	<p>The following table allows the user to enter details about their studies and return those details upon the 'Display Details' button.</p>
+</details>
+
+<!--input placeholder for first name-->
+<label for="fname">First name:</label><br>
+ <input type="text" id="fname" name="fname" value=""><br>
+
+<!--(drop-down lists) to allow user select the University’s name, campus, course title-->
+<label for="uni">University Selected:</label><br>
+  <select id="uni" name="uni">
+    <option value="Ulster University">Ulster University</option>
+    <option value="Queens University">Queens University</option>
+  </select><br>
+
+<label for="campus">Campus:</label><br>
+  <select id="campus" name="campus">
+    <option value="Jordanstown">Jordanstown</option>
+    <option value="Belfast">Belfast</option>
+    <option value="Magee">Magee</option>
+    <option value="Coleraine">Coleraine</option>
+  </select><br>
+
+<label for="course">Course:</label><br>
+  <select id="course" name="course">
+    <option value="Software Engineering">Software Engineering</option>
+    <option value="Computer Science">Computer Science</option>    
+    <option value="Interactive Multimedia Design">Interactive Multimedia Design</option>
+    <option value="Information Communication Technology">Information Communication Technology</option>
+  </select><br>
+
+</form><br> <!-- end of form-->
+
+<!--Button to display details selected on form.-->
+
+<button onclick="DisplayTex()">Display Details</button><br>
+
+<p id="displayForm"></p> <!-- The innerHTML property sets or returns the HTML content (inner HTML) of an element. Alert the HTML content of a <p> element with id = "displayForm":-->
+
+</body>
+</html>
+
+
+
+
+
