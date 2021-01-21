@@ -1,242 +1,74 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-<title>Home Page</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="COM353 Weekly Learning Log">
-<meta name="author" content="Christopher Paul">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier%20New">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,300&family=Source+Code+Pro&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<style>
-body,h1,h2,h3,h4,h5,h6,#RT{font-family: 'Nunito', sans-serif;}
-.bar,h1,h2,button {font-family: "Courier New"}
-</style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-<header>
-<!-- Navbar on large screens-->
-<div class="top">
-  <div class="bar black card -right large">
-    <a class="bar-item button hide-medium hide-large right padding-large hover-white large -red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a class="button padding-large">Christopher Paul</a>
-    <a href="#contact" class="bar-item button hide-small padding-large hover-white right">contact</a>
-    <a href="#usefulres" class="bar-item button hide-small padding-large hover-white right">useful resources</a>
-    <a href="#weeklyLog" class="bar-item button hide-small padding-large hover-white right">weekly logs</a>
-    <a href="#about" class="bar-item button hide-small padding-large hover-white right">about</a>
-    <a href="#" class="bar-item button hide-small padding-large right">home</a>
-  </div>
+    <title>Starter Template for Bootstrap</title>
 
-  <!-- Navbar on small screens -->
-    <div id="navDemo" class="bar-block white hide hide-large hide-medium large">
-      <a href="#" class="bar-item button padding-large">home</a>
-      <a href="#about" class="bar-item button padding-large">about</a>
-      <a href="#weeklyLog" class="bar-item button padding-large">weekly logs</a>
-      <a href="#usefulres" class="bar-item button padding-large">useful resources</a>
-      <a href="#contact" class="bar-item button padding-large">contact</a>
-    </div>
-</div>
-</header>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
-<!-- Header -->
-<header class="container black center blogheader">
-  <h1 class="margin jumbo text-aqua2">&lt;Hi, I'm Chris/&gt;</h1>
-  <p class="xlarge">Welcome to my learning log!</p>
-  <a href ="#about" class="button black padding-large large margin-top round-large border">Get Started</a>
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Character animation-->
-  <div class="hide-small hide-medium">
-    <div class="ChrisAnimation1">
-      <div class="ChrisNewcharacter">
-        <div class="ChrisTorso">
-        <div class="ChrisBody"></div>
-        <div class="ChrisLeftarm"></div>
-        <div class="ChrisRightarm"></div>
-        <div class="ChrisHead">
-        <div class="ChrisEyes"></div>
-        </div>
-        </div>
-        <div class="ChrisLaptop"></div>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
-    </div>
-  </div>
-  <!-- End of header-->
-</header>
+    </nav>
 
-  <!-- Typewriter animation-->
-<div class="hide-small hide-medium">
-<pre id="typewriter">
-<span class="var-highlight">var object</span> = {
-    name: <span class="string-highlight">'Christopher Paul'</span>,
-    module: <span class="string-highlight">'COM353'</span>,
-    location: <span class="string-highlight">'Earth'</span>,
-    properties:[<span class="string-highlight">'Javascript'</span>,
-                <span class="string-highlight">'HTML'</span>,
-                <span class="string-highlight">'CSS'</span>];
-}; </pre></div>
+    <main role="main" class="container">
 
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
 
-<!-- First Grid -->
-<div id="about" class="row-padding padding-64 container">
-  <div class="content justify">
-      <h1 class="center text-orange">&lt;About/&gt;</h1>
+    </main><!-- /.container -->
 
-      <h4>Hi I'm Chris and I'm currently a third year undergrad student undergoing the COM353 Dynamic Web Authoring module.</h4>
-
-      <h4 class="padding-32">The purpose of this learning log is to provide solutions to practicals along the COM353 module. Each weekly practical will be documented with a summary of what was achieved and the final solution. Furthermore, useful resources that I find will be documented and referenced.</h4>
-  </div>
-  <!-- End of first grid-->
-</div>
-
-
-<!-- Second Grid -->
-<div id="weeklyLog" class="row-padding black padding-64 container">
-  <div class="content">
-    <div class="col center">
-      <h1 class="text-aqua2">&lt;Weekly Logs/&gt;</h1>
-      <h5 class="padding">Listed below are the weekly learning logs from weeks 1-10. Learning summary and practical solution will be recorded within each section.</h5>
-    </div>
-  </div>
-
-  <!-- Linked image week1-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week1/week1.html">
-    <img alt="Week 1 Learning Log" id="week1" class="-left image" src="media/week1.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week2-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week2/week2.html">
-    <img alt="Week 2 Learning Log" id="week2" class="-left image" src="media/week2.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week3-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week3/week3.html">
-    <img alt="Week 3 Learning Log" id="week3" class="-left image" src="media/week3.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week4-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week4/week4.html">
-    <img alt="Week 4 Learning Log" id="week4" class="-left image" src="media/week4.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week5-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week5/week5.html">
-    <img alt="Week 5 Learning Log" id="week5" class="-left image" src="media/week5.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week6-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week6/week6.html">
-    <img alt="Week 6 Learning Log" id="week6" class="-left image" src="media/week6.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week7-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week7/week7.html">
-    <img alt="Week 7 Learning Log" id="week7" class="-left image" src="media/week7.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week8-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week8/week8.html">
-    <img alt="Week 8 Learning Log" id="week8" class="-left image" src="media/week8.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week9-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week9/week9.html">
-    <img alt="Week 9 Learning Log" id="week9" class="-left image" src="media/week9.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week10-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week10/week10.html">
-    <img alt="Week 10 Learning Log" id="week10" class="-left image" src="media/week10.png">
-    </a>
-  </div>
-  </div>
-
-    <!-- Linked image week11-->
-  <div class=" col l3 m6 s12 -padding-small">
-  <div class=" white hover-opacity">
-    <a href="html/week11/week11.html">
-    <img alt="Week 11 Learning Log" id="week11" class="-left image" src="media/week11.png">
-    </a>
-  </div>
-  </div>
-  <!-- End of second grid-->
-</div>
-
-
-
-<!-- Third Grid -->
-<div id="usefulres" class="row-padding white padding-64 container">
-  <div class="content">
-    <div class="col center">
-      <h1 class="text-orange">&lt;Useful Resources/&gt;</h1>
-      <h5 class="padding">Listed below are helpful resources that I found, expanding on HTML5, CSS and Javascript</h5>
-    </div>
-  </div>
-  <!-- End of third grid-->
-</div>
-
-
-<!-- Footer -->
-<footer id="contact" class="container padding-64 center black">  
-    <div class="col center">
-      <h1 class="text-aqua2">&lt;Contact Me/&gt;</h1>
-      <h5 class="padding">Contact me via: <a href="mailto:Paul-C5@ulster.ac.uk">Paul-C5@ulster.ac.uk</a></h5>
-    </div>
-</footer>
-
-<footer class="footer2">
-    <p class="text-white">All rights reserved. Christopher Paul &copy; 2020
-      <a href="#" class="-border-box -right -hover-text-green">
-        <i id="Arrow" class="fa fa-arrow-up right"><span id="RT"> return to top</span></i>
-      </a>
-
-      <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
-        <img class="center" alt="Valid CSS!" style="border:0;width:78px;height:28px" src="http://jigsaw.w3.org/css-validator/images/vcss"/>
-      </a>
-    </p> 
-</footer>
-<!-- End of Footer -->
-
-<script src="js/js.js"></script>
-</body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
